@@ -1,0 +1,37 @@
+// base Settings
+body{
+    margin-top:50px;
+}
+
+
+//base classes 
+.page-section{
+    height:calc(100vh - 50px);
+    &--blue{
+        @extend .page-section;
+        background-color:skyblue;
+       }
+    &--orange{
+        @extend .page-section;
+        background-color:darkorange;
+    }
+    &--green{
+        @extend .page-section;
+        background-color: lawngreen;
+    }
+}
+
+@font-face {
+    font-family: 'BrightAndBeautiful';
+    src: url('./public/fonts/Bright and Beautiful.woff');
+}
+
+@font-face {
+    font-family: 'LuckiestGuy';
+    src: url('.././public/fonts/LuckiestGuy.ttf');
+}
+
+@font-face {
+    font-family: 'heavydock';
+    src: url('.././public/fonts/heavy_dock11.woff');
+}
